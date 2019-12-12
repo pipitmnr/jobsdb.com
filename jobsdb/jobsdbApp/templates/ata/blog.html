@@ -1,0 +1,37 @@
+{% extends 'ata/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="btn btn-link button-add-data">
+                    <a href="{% url 'add-blog' %}" class="btn btn-info button-add-data" role="button">Tambah Data</a>
+                </div>
+            </div>
+        </div>
+        {% for blog in blogs %}
+            <div class="row align-items-center">
+                <div class="col-md-12 blog-pict">
+                    <img class="" src="{{blog.img_blog}}" alt="">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-12 blog-center">
+                    <p>
+                        {{blog.date_blog}} 
+                    </p>
+                    <h2>
+                        {{blog.judul_blog}}
+                    </h2>
+                    <p>
+                        {{ blog.isi_blog|safe|truncatewords:"30"|linebreaks }}
+                        <a href="{% url 'blog-detail' blog.id %}">Baca Selengkapnya</a>
+                    </p>
+                </div>
+            </div>
+            <div class="home-white-space">
+
+            </div>
+        {% endfor %}         
+    </div>
+{% endblock %}

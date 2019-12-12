@@ -1,0 +1,26 @@
+{% extends 'ata/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 blog-pict">
+                <img class="" src="{{blog.img_blog}}" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-12 blog-center">
+                <p>
+                    {{blog.date_blog}} 
+                </p>
+                <h2>
+                    {{blog.judul_blog}}
+                </h2>
+                <p>
+                    {{blog.isi_blog}} 
+                </p>
+            </div>
+        </div>
+        <div class="home-white-space">
+        </div>      
+    </div>
+{% endblock %}
