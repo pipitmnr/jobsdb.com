@@ -9,15 +9,15 @@ def beranda(request):
     info = {
         'flag':1,
         'lowongan':lowongan,
-        'artikel':artikel
+        'artikel':artikel,
     }
     return render(request, 'jobsdbApp/beranda.html', info)
 
-def event(request, artikel_id):
+def event(request):
     info = {
         'flag':3
     }
-    return render(request, 'jobsdbAPp/event.html', info)
+    return render(request, 'jobsdbApp/event.html', info)
 
 def artikel(request, artikel_id):
     artikel = Artikel.objects.get(pk=artikel_id)

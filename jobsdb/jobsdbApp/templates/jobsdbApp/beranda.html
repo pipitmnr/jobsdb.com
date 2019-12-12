@@ -93,22 +93,25 @@
         </div>
         <div class="container beranda-isi-bg">
             <div class="row">
-                <div class="col-md-8 beranda-isi">
+                <div class="col-md-8 p-0 beranda-isi">
                     <div class="row beranda-isi-header-bg pt-2">
                         <div class="col-md-10 beranda-judul-isi">
                             <span>Tips Karir & Rekrutmen</span>
                         </div>
                         <div class="col-md-2 text-right">
-                            <a href="" style="color:#A0A6C2">lihat semua</a>
+                            <a href="{% url 'resource' %}" style="color:#A0A6C2">lihat semua</a>
                         </div>
                     </div>
-                    <div class="row beranda-article-bg p-3">
-                        <div class="col-md-4">
-                            <img class="w-100" src="https://id.content.jobsdbcdn.com/id-id/wp-content/themes/jobsdb/images/bgi-featureImage-646.png">
-                        </div>
-                        <div class="col-md-8 beranda-artikel-secondary">
-                            <a href=><h2>Etika Dipanggil Interview</h2></a>
-                            <p class="text-justify">Luar biasa! Kamu telah diundang interview kerja! Bagaimana kamu merespons panggilan interview akan mempengaruhi kesan hrd tentang kamu, bahkan sebelum hrd bertemu dengan kamu.Etika yang tepat diperlukan, langsung dari tahap awal dalam proses rekrutmen. Cara kamu berkomunikasi secara verbal dan tertulis sangat penting.Berikut Etika Dipanggil Interview: Jawab dengan Cepat dan Hati-hatiPanggilan interview diterima jika kamu</p>
+                    <div class='container'>
+                        <div class="row beranda-article-bg p-3">
+                            <div class="col-md-4">
+                                <img class="beranda-article-img" src="{{artikel.thumbnail}}">
+                            </div>
+                            <div class="col-md-8 beranda-artikel-secondary">
+                                <a href="{% url 'artikel' artikel.id%}"><h2>{{artikel.judul}}</h2></a>
+                                <p class="text-justify">{{artikel.isi|truncatewords:40}}</p>
+                                <a href="{% url 'artikel' artikel.id%}" style="color:black">Baca Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                 </div>
