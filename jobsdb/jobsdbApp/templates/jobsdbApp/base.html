@@ -14,18 +14,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 logo">
-                    <img src="https://id.jobsdb.com/id-id/wp-content/uploads/sites/2/static/about-us/images/home-logo-main01-2.png" alt="">
+                    <a href="{% url 'beranda' %}">
+                        <img src="https://id.jobsdb.com/id-id/wp-content/uploads/sites/2/static/about-us/images/home-logo-main01-2.png" alt="">
+                    </a>
                 </div>
                 <div class="col-md-6">
                     <div class="header-nav-atas">
                         <div class="btn">
-                            <a href="" class="btn btn-success btn-abu" role="button">Employer site</a>
-                        </div>
-                        <div class="btn">
                             <a href="" class="btn btn-info btn-biru" role="button">Log in</a>
-                        </div>
-                        <div class="btn">
-                            <a href="" class="btn btn-info btn-biru" role="button">Sign up</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +32,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-4 navbar">
-                            <a href="">HOME</a>
+                            <a href="{% url 'beranda' %}">HOME</a>
                             <a href="">MY JOBSDB</a>
                             <a href="">RESOURCES</a>
                             <a href="">EVENT</a>
