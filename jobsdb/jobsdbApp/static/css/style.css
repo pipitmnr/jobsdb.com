@@ -1,3 +1,4 @@
+/* --------------------------HEADER & FOOTER -------------------------------------- */
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -44,7 +45,7 @@ body{
 .header-nav-bawah a{
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 }
 .header-nav-bawah a:hover{
     color: #59cbfb;
@@ -64,6 +65,9 @@ header{
     -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
     z-index: 10;
+}
+.active{
+    color:#59cbfb;
 }
 .white-space{
     padding: 64px;
@@ -136,6 +140,8 @@ header{
     background-color: #EDEDF2;
     border: none;
     border-radius: 8px;
+    margin-left: 0px;
+    margin-right:0px;
 }
 .beranda-article-bg{
     background-color:#6198B6;
@@ -163,4 +169,58 @@ header{
 .beranda-daftar-lowongan-list li{
     color: white;
     padding: 10px 0px;
+}
+.beranda-article-img{
+    height: 141px;
+    width: 212px;
+}
+/* -------------------------------------------------- EVENT ------------------------------------ */
+.event-isi{
+    background:url('https://id.jobsdb.com/id-id/wp-content/uploads/sites/2/static/event/coming-soon-kerja-luar-negeri.gif');
+    height: 235px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.event-pengumuman h1{
+    padding-top: 85px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+/* ------------------------------------- ARTIKEL ----------------------------------- */
+.artikel-foto img{
+    width:100%;
+}
+.artikel-judul{
+    border-bottom:solid #EBEBF1 1px;
+}
+.body-article{
+    background-color:#EBEBF1;
+}
+.artikel-post{
+    box-shadow:0 1px 3px rgba(0,0,0,.1);
+    border-radius: 10px;
+    background-color:white;
+    margin:40px 0;
+}
+.artikel-lainnya{
+    box-shadow:0 1px 3px rgba(0,0,0,.1);
+    border-radius: 10px;
+    background-color:white;
+    margin:40px 0;
+}
+.artikel-judul-lainnya{
+    border-bottom:solid #EBEBF1 1px;
+    border-top:solid #EBEBF1 1px;
+}
+.artikel-judul-lainnya h3{
+    font-family:arial;
+}
+.artikel-list{
+    border-bottom:solid #EBEBF1 1px;
+    border-top:solid #EBEBF1 1px;
+}
+.circle-border img{
+    display: flex;
+    width:75%;
 }

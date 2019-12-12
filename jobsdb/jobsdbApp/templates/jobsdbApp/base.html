@@ -35,13 +35,21 @@
             <div class="row align-items-center header-nav-bawah">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-4 navbar">
-                            <a href="">HOME</a>
-                            <a href="">MY JOBSDB</a>
-                            <a href="">RESOURCES</a>
-                            <a href="">EVENT</a>
+                        <div class="col-md-8 navbar">
+                            <div class='col-md-2 navbar-specific'>
+                                <a href="{% url 'beranda' %}" class="{% if 'flag' == 1 %} active {% endif %}">HOME</a>
+                            </div>
+                            <div class='col-md-2 navbar-specific'>
+                                <a href="">MY JOBSDB</a>
+                            </div>
+                            <div class='col-md-2 navbar-specific'>
+                                <a href="">RESOURCES</a>
+                            </div>
+                            <div class='col-md-2 navbar-specific'>
+                                <a href="{% url 'event' %}" class="{% if 'flag' == 3 %} active {% endif %}">EVENT</a>
+                            </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-4">
                             
                         </div> 
                     </div>
