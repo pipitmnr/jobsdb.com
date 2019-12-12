@@ -45,7 +45,7 @@ body{
 .header-nav-bawah a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 .header-nav-bawah a:hover{
     color: #59cbfb;
@@ -54,7 +54,7 @@ a {
     transition: all 0.5s ease;
 }
 header{
-    border-bottom: 1px solid #ececec;
+    /* border-bottom: 1px solid #ececec; */
     background-color: white;
     position: fixed;
     top: 0;
@@ -78,9 +78,10 @@ header{
 }
 .footer-text{
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 .footer-text span{
+    font-size: 14px;
     color: #59cbfb;
     font-weight: bold;
 }
@@ -123,9 +124,16 @@ header{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+.beranda-judul-form{
+    padding-top: 10px;
+    display: table;
+}
+.beranda-form-bg{
+    margin-bottom: 24px;
+}
 .form-bg{
     background-color:#216F93;
-    margin-bottom:24px;
+    margin-bottom:0px;
 }
 .beranda-cari input{
     background-color: orange;
@@ -174,6 +182,76 @@ header{
     height: 141px;
     width: 212px;
 }
+/* ----------------------------------- SEARCH --------------------------------------- */
+.search-konten{
+    /* border-right: #999 1px solid;
+    border-left: #999 1px solid; */
+    border-bottom: #ccc 1px solid;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.search-tgl-publikasi{
+    display: table;
+    margin-left: auto;
+    margin-bottom: auto;
+    color: #999;
+}
+.search-bg{
+    background-color: #ebebf1;
+}
+.search-konten p{
+    font-size: 14px;
+}
+.search-jabatan span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.search-gaji{
+    color: darkgreen;
+}
+.search-jabatan span a{
+    text-decoration: none;
+    color: #171717;;
+}
+.beranda-form-bar{
+    display: table;
+    margin: 0;
+    padding: 0 83px;
+    background-color: #ebebf1;
+}
+.search-white-space{
+    padding: 20px;
+}
+.search-pict img{
+    width: 150px;
+}
+.search-hsl{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+/* ------------------------------- dETAIL LOWONGAN -------------------------------- */
+
+
+
+.lowongan-pict img{
+    display: table;
+    margin: 0 auto;
+}
+.lowongan-jabatan{
+    display: table;
+    margin: 0 auto;
+}
+.lowongan-deskripsi{
+    display: table;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
 /* -------------------------------------------------- EVENT ------------------------------------ */
 .event-isi{
     background:url('https://id.jobsdb.com/id-id/wp-content/uploads/sites/2/static/event/coming-soon-kerja-luar-negeri.gif');

@@ -15,3 +15,4 @@ class Artikel(models.Model):
     tanggal_publikasi = models.DateField(auto_now=True)
     thumbnail = models.CharField(max_length=200)
     isi = models.TextField(max_length=10000)
+
