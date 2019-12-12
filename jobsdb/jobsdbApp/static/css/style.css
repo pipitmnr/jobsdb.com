@@ -66,7 +66,7 @@ header{
     z-index: 10;
 }
 .white-space{
-    padding: 131px 0;
+    padding: 64px;
 }
 .footer-blue{
     padding-top: 50px;
@@ -94,7 +94,7 @@ header{
 }
 .footer-text a{
     color: white;
-  
+}
 /* ----------------------------------- BERANDA --------------------------------------- */
 .beranda-mulai-sekarang {
     background-color: orange;
