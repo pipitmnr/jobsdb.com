@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+{% extends 'jobsdbApp/base.html' %}
+
+{% block content %}
 <body>
     <div class="beranda-header-bg">
         <div class="container">
@@ -121,7 +114,7 @@
                 </div>
                 <div class='col-md-4 beranda-kanan-bg'>
                     <div class='beranda-daftar-lowongan pt-2 text-center'>
-                        <span style="color:#black">Lowongan Minggu Ini</span>
+                        <span style="color:black">Lowongan Minggu Ini</span>
                     </div>
                     <div class='beranda-daftar-lowongan-list'>
                         <ul class="list-unstyled">
@@ -139,4 +132,4 @@
         </div>
     </div>
 </body>
-</html>
+{% endblock %}
