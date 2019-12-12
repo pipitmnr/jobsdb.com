@@ -9,7 +9,7 @@ def beranda(request):
     info = {
         'flag':1,
         'lowongan':lowongan,
-        'artikel':artikel
+        'artikel':artikel,
     }
     return render(request, 'jobsdbApp/beranda.html', info)
 
@@ -36,3 +36,8 @@ def resource(request):
         'newest_artikel':newest_artikel
     }
     return render(request, 'jobsdbApp/resource.html', info)
+
+def searchResult(request):
+    return render(request, 'jobsdbApp/search-result.html')
+def detailLowongan(request):
+    return render(request, 'jobsdbApp/detail-lowongan.html')
